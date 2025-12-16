@@ -1,0 +1,23 @@
+{
+  "id": "/",
+  "scope": "/",
+  "name": "Streak X",
+  "display": "standalone",
+  "start_url": "/",
+  "short_name": "Streak X",
+  "theme_color": "#ff6900",
+  "description": "Your Daily Streaks Manager",
+  "orientation": "any",
+  "background_color": "#000000",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "display_override": ["window-controls-overlay"],
+  "icons": [
+    { "src": "icons/img4.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/img3.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/img2.png", "sizes": "48x48", "type": "image/png" },
+    { "src": "icons/img1.png", "sizes": "24x24", "type": "image/png" }
+  ],
+  "features": ["Cross Platform", "fast", "simple"],
+  "categories": ["social"]
+}
