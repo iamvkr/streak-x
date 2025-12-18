@@ -7,11 +7,9 @@ import { Input } from "@/components/ui/input";
 import { useMyContext } from "@/providers/ContextProvider";
 import type { StreakType } from "@/types";
 import {
-  ArrowDownLeftFromCircleIcon,
   ArrowLeft,
   PenBox,
   Save,
-  Trash,
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
@@ -115,12 +113,8 @@ const ManageStreak = () => {
           </div>
         </div>
         <div className="mobile-actions xl:hidden mt-2 mb-8 text-black flex justify-evenly">
-          <Button variant={"secondary"} onClick={handleReset}>
-            <ArrowDownLeftFromCircleIcon /> Reset
-          </Button>
-          <Button variant={"destructive"} onClick={handleDelete}>
-            <Trash /> Delete
-          </Button>
+        <ResetBtnDialog handleOk={handleReset}/>
+        <DeleteBtnDialog handleOk={handleDelete}/>
           <Button onClick={handleSave}>
             <Save /> Save
           </Button>
@@ -195,8 +189,6 @@ const ManageStreak = () => {
             </Field>
           </FieldGroup>
         </div>
-
-        {/* ALERT BOX FOR COMFIRMATION ACTIONS */}
         
       </div>
     )

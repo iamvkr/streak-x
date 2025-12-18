@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import Layout from "@/Layout";
 import Home from "@/pages/Home";
 import AddStreak from "@/pages/AddStreak";
@@ -11,7 +11,7 @@ import { Toaster } from "sonner";
 export function App() {
   return (
     <ContextProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Layout>
           <Navbar />
           <Routes>
@@ -22,7 +22,7 @@ export function App() {
           </Routes>
         </Layout>
         <Toaster position="top-center" />
-      </BrowserRouter>
+      </HashRouter>
     </ContextProvider>
   );
 }
